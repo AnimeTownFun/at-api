@@ -63,7 +63,7 @@ router.get("/stream/:id", async (req, res, next) => {
               },
               iframe: "",
               plyr: {
-                main: `https://plyr.link/p/player.html#${base64encode(
+                main: `https://animetown-player.rafiqul-islami3.repl.co/p/player.html#${base64encode(
                   mainstrm
                 )}`,
                 backup: null,
