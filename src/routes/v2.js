@@ -118,10 +118,10 @@ router.get("/stream/:id", async (req, res, next) => {
             },
             iframe: data.iframe,
             plyr: {
-              main: `https://plyr.link/p/player.html#${base64encode(
+              main: `https://animetown-player.rafiqul-islami3.repl.co/p/player.html#${base64encode(
                 mainstrm.url
               )}`,
-              backup: `https://plyr.link/p/player.html#${base64encode(
+              backup: `https://animetown-player.rafiqul-islami3.repl.co/p/player.html#${base64encode(
                 bkstrm.url
               )}`,
             },
@@ -173,10 +173,10 @@ router.get("/stream/:id", async (req, res, next) => {
             },
             iframe: data.iframe,
             plyr: {
-              main: `https://plyr.link/p/player.html#${base64encode(
+              main: `https://animetown-player.rafiqul-islami3.repl.co/p/player.html#${base64encode(
                 mainstrm.url
               )}`,
-              backup: `https://plyr.link/p/player.html#${base64encode(
+              backup: `https://animetown-player.rafiqul-islami3.repl.co/p/player.html#${base64encode(
                 bkstrm.url
               )}`,
             },
