@@ -14,18 +14,7 @@ const app = express();
 
 app.use(morgan("dev"));
 app.use(helmet());
-app.use(
-  cors({
-    origin:
-      process.env.BLOCK_WITH_CORS === "true"
-        ? !process.env.ALLOWLIST ||
-          process.env.ALLOWLIST === "" ||
-          process.env.ALLOWLIST === "*"
-          ? "*"
-          : process.env.ALLOWLIST.split(",")
-        : "*",
-  })
-);
+app.use(cors());
 app.use(json());
 
 Sentry.init({
